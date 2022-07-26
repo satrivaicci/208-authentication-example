@@ -7,7 +7,7 @@ import plotly
 
 # Keep this out of source code repository - save in a file or a database
 VALID_USERNAME_PASSWORD_PAIRS = {
-    'Mickey': 'Mouse', 'Donald': 'Duck'
+    'admin': 'admin', 'Mickey': 'Mouse', 'Donald': 'Duck'
 }
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -21,7 +21,7 @@ auth = dash_auth.BasicAuth(
 )
 
 app.layout = html.Div([
-    html.H1('Welcome to the app'),
+    html.H1('Welcome to Omar\'s app'),
     html.H3('You are successfully authorized'),
     dcc.Dropdown(
         id='dropdown',
